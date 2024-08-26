@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mike</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/mike.png " alt="">
+            </div>
+            <h1>Michael Castro</h1>
+            <h2>Aspirante a desarrollador de software</h2>
+            <div class="redes">
+                <a href="www.linkedin.com/in/michael-yesid-castro-daza-98489a322" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/mike-ki17" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Mike Castro.</span> Apasionado del desarrollo de software, con habilidades en resolución
+                de problemas y pensamiento lógico. Me destaco en trabajo en equipo, comunicación y aprendizaje continuo,
+                con el objetivo de contribuir a proyectos innovadores.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-08-2006
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+57) 3227173488
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            michael17ycd@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i> <span>BASKETBALL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-running"></i> <span>ATLETISMO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-cubes"></i>
+                            <span>CUBOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette"></i>
+                            <span>ARTES</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+           
+            <a href="./CV-MICHAEL-YESID-CASTRO-DAZA.pdf" target="_blank" download="CV-MICHAEL-YESID-CASTRO-DAZA.pdf">
+                <button>
+                    Descargar CV
+                    <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mysql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>64%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Desarrollo de Software</h4>
+                        <span class="casa">Universidad de San Buneaventura</span>
+                        <span class="fecha">2024 - Actualmente cursando</span>
+                        <p>Durante mi formación en Desarrollo de Software, he adquirido experiencia práctica en
+                            programación, diseño de algoritmos y desarrollo de aplicaciones. He trabajado en proyectos
+                            que me han permitido aplicar conceptos teóricos a situaciones reales, mejorando mis
+                            habilidades en resolución de problemas y trabajo en equipo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tec Integración de Contenidos Digitales</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Formado en la creación y optimización de contenidos digitales, con experiencia en diseño
+                            gráfico y edición multimedia. Desarrollé un enfoque preciso y creativo en la producción de
+                            materiales interactivos, adaptándome rápidamente a nuevas tecnologías para enfrentar
+                            desafíos en el campo digital.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller Académico</h4>
+                        <span class="casa">Colegio Union Colombia</span>
+                        <span class="fecha">2011 - 2023</span>
+                        <p>Mi formación académica en el Colegio Unión Colombia me proporcionó una base sólida en
+                            diversas disciplinas, desarrollando habilidades analíticas y de pensamiento crítico. A lo
+                            largo de estos años, participé en diversas actividades extracurriculares que me ayudaron a
+                            cultivar un enfoque equilibrado entre el aprendizaje teórico y las aplicaciones prácticas.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Asesor Comercial</h4>
+                        <span class="casa">Calza Promo</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Como Asesor Comercial en Calza Promo, desarrollé habilidades en atención al cliente y ventas,
+                            mejorando significativamente mi capacidad de comunicación para ofrecer soluciones
+                            personalizadas. Durante este tiempo, perfeccioné la gestión de relaciones comerciales y el
+                            cumplimiento de metas de ventas en un entorno dinámico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <video controls>
+                        <source src="./vid/vid_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay">
+                        <h3>Tienda online de empanadas</h3>
+                        <p>React</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video controls>
+                        <source src="./vid/vid_2.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay">
+                        <h3>Landing - FireFly Hide</h3>
+                        <p>HTML, CSS y Javascrippt</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <video controls>
+                        <source src="./vid/vid_3.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay">
+                        <h3>Landing - ArtByte Technology</h3>
+                        <p>HTML, CSS y Javascrippt</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form   action="https://formspree.io/f/xldrzgjj"
+                method="POST"
+              >
+                    <div class="col">
+                        <input type="text" placeholder="Tú Nombre" name="nombre">
+                        <input type="text" placeholder="Número telefónico" name="telefono">
+                        <input type="text" placeholder="Dirección de correo" name="direccion">
+                        <input type="text" placeholder="Tema" name="tema">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" name="mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="www.linkedin.com/in/michael-yesid-castro-daza-98489a322" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/mike-ki17" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
