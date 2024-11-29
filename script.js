@@ -39,3 +39,18 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 } 
+
+document.querySelectorAll('.proyecto').forEach((sliderContainer) => {
+    const slider = sliderContainer.querySelector('.slider');
+    let index = 0;
+    let  slides = slider.children.length;
+
+    function startSlider() {
+        setInterval(() => {
+            index = (index + 1) % slides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 5000); // Cambia cada 5 segundos
+    }
+
+    startSlider();
+});
