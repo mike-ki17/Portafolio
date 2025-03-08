@@ -49,7 +49,7 @@ document.querySelectorAll('.proyecto').forEach((sliderContainer) => {
         setInterval(() => {
             index = (index + 1) % slides;
             slider.style.transform = `translateX(-${index * 100}%)`;
-        }, 5000); // Cambia cada 5 segundos
+        }, 5000);
     }
 
     startSlider();

@@ -650,7 +650,8 @@ footer .arriba{
 
 
 .img-logros img{
-    width: 400px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 
